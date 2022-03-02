@@ -1,10 +1,11 @@
 import express from 'express'
+import taskController from '../controllers/taskController'
 const router = express.Router()
 
-router.get('/',(req,res)=>res.send('this is for get task'));
-router.get('/task');
-router.post('/task');
+router.get('/',taskController.viewTasks);
+router.get('/:id',taskController.viewTask);
+router.post('/add',taskController.addTask);
 router.delete('/task');
-router.put('/task')
+router.patch('/:id',taskController.updateTask)
 
 export default router
