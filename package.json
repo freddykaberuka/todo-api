@@ -1,0 +1,34 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "description": "todo is  a list of tasks you need to complete or things that you want to do. Most typically, they're organised in order of priority.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freddykaberuka/todo-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freddykaberuka/todo-api/issues"
+  },
+  "homepage": "https://github.com/freddykaberuka/todo-api#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "body-parser": "^1.19.2",
+    "sequelize-cli": "^6.4.1"
+  }
+}
